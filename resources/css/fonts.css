@@ -1,0 +1,31 @@
+@charset "utf-8";
+@font-face{ 
+    font-family:'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pretendard Regular'), local('Pretendard-Regular'),
+    url('../fonts/Pretendard-Regular.woff2') format('font-woff2'),
+    url('../fonts/Pretendard-Regular.woff') format('woff'), 
+    url('../fonts/Pretendard-Regular.otf') format('opentype'); 
+    font-display: swap;
+}
+@font-face{ 
+    font-family:'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Pretendard Medium'), local('Pretendard-Medium'),
+    url('../fonts/Pretendard-Medium.woff2') format('font-woff2'),
+    url('../fonts/Pretendard-Medium.woff') format('woff'), 
+    url('../fonts/Pretendard-Medium.otf') format('opentype'); 
+    font-display: swap;
+}
+@font-face{ 
+    font-family:'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Pretendard Bold'), local('Pretendard-Bold'),
+    url('../fonts/Pretendard-Bold.woff2') format('font-woff2'),
+    url('../fonts/Pretendard-Bold.woff') format('woff'), 
+    url('../fonts/Pretendard-Bold.otf') format('opentype'); 
+    font-display: swap;
+}

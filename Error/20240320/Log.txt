@@ -1,0 +1,107 @@
+[2024-03-20 오전 9:31:34] Error : System.Security.Cryptography.CryptographicException: 패딩이 잘못되었으며 제거할 수 없습니다.
+   위치: System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   위치: System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   위치: System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   위치: System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   위치: System.IO.Stream.Close()
+   위치: Project.Donna.Common.Common.DecryptString(String pEncrypt, String pKey) 파일 D:\Pro.Donna\Project.Donna\Common\Common.cs:줄 112 
+[2024-03-20 오전 9:43:46] Error : System.Security.Cryptography.CryptographicException: 패딩이 잘못되었으며 제거할 수 없습니다.
+   위치: System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   위치: System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   위치: System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   위치: System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   위치: System.IO.Stream.Close()
+   위치: Project.Donna.Common.Common.DecryptString(String pEncrypt, String pKey) 파일 D:\Pro.Donna\Project.Donna\Common\Common.cs:줄 112 
+[2024-03-20 오전 9:50:11] Error : System.Security.Cryptography.CryptographicException: 패딩이 잘못되었으며 제거할 수 없습니다.
+   위치: System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   위치: System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   위치: System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   위치: System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   위치: System.IO.Stream.Close()
+   위치: Project.Donna.Common.Common.DecryptString(String pEncrypt, String pKey) 파일 D:\Pro.Donna\Project.Donna\Common\Common.cs:줄 112 
+[2024-03-20 오전 9:52:11] Error : System.Security.Cryptography.CryptographicException: 패딩이 잘못되었으며 제거할 수 없습니다.
+   위치: System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   위치: System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   위치: System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   위치: System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   위치: System.IO.Stream.Close()
+   위치: Project.Donna.Common.Common.DecryptString(String pEncrypt, String pKey) 파일 D:\Pro.Donna\Project.Donna\Common\Common.cs:줄 112 
+[2024-03-20 오전 10:00:28] Error : System.Exception: Key 사이즈가 올바르지 않습니다. 
+[2024-03-20 오전 10:04:45] Error : System.Security.Cryptography.CryptographicException: 패딩이 잘못되었으며 제거할 수 없습니다.
+   위치: System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   위치: System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   위치: System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   위치: System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   위치: System.IO.Stream.Close()
+   위치: Project.Donna.Common.Common.DecryptString(String pEncrypt, String pKey) 파일 D:\Pro.Donna\Project.Donna\Common\Common.cs:줄 112 
+[2024-03-20 오전 10:24:37] Error : System.Data.SqlClient.SqlException (0x80131904): 프로시저 또는 함수 'USP_BOARD_COMMENT_REGIST'에 매개 변수 '@PARENTID'이(가) 필요하지만 제공되지 않았습니다.
+   위치: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   위치: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   위치: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   위치: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   위치: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   위치: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   위치: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   위치: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   위치: Project.Donna.Service.DBHelper.ExecuteNonQuery(String pConn, String pQryName, List`1 pParam) 파일 D:\Pro.Donna\Project.Donna\Service\DBHelper.cs:줄 86
+   위치: Project.Donna.Service.Board.Create(BoardComment comment) 파일 D:\Pro.Donna\Project.Donna\Service\Board.cs:줄 373
+   위치: Project.Donna.Business.Board.Create(BoardComment comment) 파일 D:\Pro.Donna\Project.Donna\Business\Board.cs:줄 109
+   위치: Project.Donna.Board.View.btnCreateComment_Click(Object sender, EventArgs e) 파일 D:\Pro.Donna\Project.Donna\Board\View.aspx.cs:줄 340
+ClientConnectionId:2e38f1ae-d725-4416-929c-620b20d85a48
+Error Number:201,State:4,Class:16 
+[2024-03-20 오전 10:45:15] Error : System.Security.Cryptography.CryptographicException: 패딩이 잘못되었으며 제거할 수 없습니다.
+   위치: System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   위치: System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   위치: System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   위치: System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   위치: System.IO.Stream.Close()
+   위치: Project.Donna.Common.Common.DecryptString(String pEncrypt, String pKey) 파일 D:\Pro.Donna\Project.Donna\Common\Common.cs:줄 112 
+[2024-03-20 오전 10:46:01] Error : System.Security.Cryptography.CryptographicException: 패딩이 잘못되었으며 제거할 수 없습니다.
+   위치: System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   위치: System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   위치: System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   위치: System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   위치: System.IO.Stream.Close()
+   위치: Project.Donna.Common.Common.DecryptString(String pEncrypt, String pKey) 파일 D:\Pro.Donna\Project.Donna\Common\Common.cs:줄 112 
+[2024-03-20 오전 10:46:36] Error : System.Security.Cryptography.CryptographicException: 패딩이 잘못되었으며 제거할 수 없습니다.
+   위치: System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   위치: System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   위치: System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   위치: System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   위치: System.IO.Stream.Close()
+   위치: Project.Donna.Common.Common.DecryptString(String pEncrypt, String pKey) 파일 D:\Pro.Donna\Project.Donna\Common\Common.cs:줄 112 
+[2024-03-20 오전 10:47:12] Error : System.Security.Cryptography.CryptographicException: 패딩이 잘못되었으며 제거할 수 없습니다.
+   위치: System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   위치: System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   위치: System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   위치: System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   위치: System.IO.Stream.Close()
+   위치: Project.Donna.Common.Common.DecryptString(String pEncrypt, String pKey) 파일 D:\Pro.Donna\Project.Donna\Common\Common.cs:줄 112 
+[2024-03-20 오전 10:50:48] Error : System.Security.Cryptography.CryptographicException: 패딩이 잘못되었으며 제거할 수 없습니다.
+   위치: System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   위치: System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   위치: System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   위치: System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   위치: System.IO.Stream.Close()
+   위치: Project.Donna.Common.Common.DecryptString(String pEncrypt, String pKey) 파일 D:\Pro.Donna\Project.Donna\Common\Common.cs:줄 112 
+[2024-03-20 오전 10:50:55] Error : System.Security.Cryptography.CryptographicException: 패딩이 잘못되었으며 제거할 수 없습니다.
+   위치: System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   위치: System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   위치: System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   위치: System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   위치: System.IO.Stream.Close()
+   위치: Project.Donna.Common.Common.DecryptString(String pEncrypt, String pKey) 파일 D:\Pro.Donna\Project.Donna\Common\Common.cs:줄 112 
+[2024-03-20 오전 10:51:16] Error : System.Security.Cryptography.CryptographicException: 패딩이 잘못되었으며 제거할 수 없습니다.
+   위치: System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   위치: System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   위치: System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   위치: System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   위치: System.IO.Stream.Close()
+   위치: Project.Donna.Common.Common.DecryptString(String pEncrypt, String pKey) 파일 D:\Pro.Donna\Project.Donna\Common\Common.cs:줄 112 
+[2024-03-20 오전 10:51:50] Error : System.Security.Cryptography.CryptographicException: 패딩이 잘못되었으며 제거할 수 없습니다.
+   위치: System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast)
+   위치: System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   위치: System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   위치: System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   위치: System.IO.Stream.Close()
+   위치: Project.Donna.Common.Common.DecryptString(String pEncrypt, String pKey) 파일 D:\Pro.Donna\Project.Donna\Common\Common.cs:줄 112 

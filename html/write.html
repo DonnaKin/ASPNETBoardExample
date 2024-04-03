@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투비콘 | 게시판</title>
+    <link rel="stylesheet" href="../resources/css/reset.css">
+    <link rel="stylesheet" href="../resources/css/fonts.css">
+    <link rel="stylesheet" href="../resources/css/common.css">
+    <script src="../lib/js/jquery-3.5.1.min.js"></script>
+    <script src="../resources/js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1 id="logo">
+                <a href="#">투비콘</a>
+            </h1>
+        </header>
+        <div id="container">
+            <div class="sub_top">
+                <div class="inner">
+                    <span class="sub_title">WRITE</span>
+                </div>
+            </div>
+            <section>
+                <div class="inner">
+                    <div class="board_write_wrap">
+                        <div class="input_box half">
+                            <label for="userName" class="form_label">작성자</label>
+                            <!-- .error -->
+                            <input type="text" id="userName" class="form_input error" placeholder="이름 입력" required>
+                            <p class="error_message">이름을 입력해주세요.</p>
+                        </div>
+                        <div class="input_box half">
+                            <!-- .error -->
+                            <label for="userPassword" class="form_label">비밀번호</label>
+                            <input type="password" id="userPassword" class="form_input" placeholder="비밀번호 입력" required>
+                            <p class="error_message">비밀번호를 입력해주세요.</p>
+                        </div>
+                        <div class="textarea_box">
+                            <!-- .error -->
+                            <label for="contents" class="form_label">내용</label>
+                            <textarea id="contents" class="form_textarea" placeholder="내용 입력"></textarea>
+                            <p class="error_message">내용을 입력해주세요.</p>
+                        </div>
+                        <div class="upload_box">
+                            <h3 class="form_label">첨부파일 <em>(10MB 이내 파일 첨부 가능)</em></h3>
+                            <ul>
+                                <li class="file_wrap">
+                                    <span class="file_name">첨부파일01.xlsx</span>
+                                    <button type="button" class="btn_delete">삭제</button>
+                                </li>
+                                <li class="file_wrap">
+                                    <span class="file_name">첨부파일02.pdf</span>
+                                    <button type="button" class="btn_delete">삭제</button>
+                                </li>
+                                <li class="file_wrap">
+                                    <span class="file_name">첨부파일03.hwp</span>
+                                    <button type="button" class="btn_delete">삭제</button>
+                                </li>
+                                <li class="file_wrap">
+                                    <label for="uploadFile" class="btn_upload">첨부하기</label>
+                                    <input type="file" id="uploadFile" class="form_file hide">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="terms_box">
+                            <!-- .error -->
+                            <div class="check_box">
+                                <input type="checkbox" id="termsAgree">
+                                <label for="termsAgree">
+                                    <span class="icon_chkbox"></span>
+                                    [필수] 개인정보 수집/이용 동의
+                                </label>
+                            </div>
+                            <div class="terms_text_wrap">
+                                <p>
+                                    1. 개인정보의 수집항목 및 수집방법<br>
+                                    통계청 나라통계사이트에서는 기본적인 회원 서비스 제공을 위한 필수정보로 실명인증정보와 가입정보로 구분하여 다음의 정보를 수집하고 있습니다. 
+                                    필수정보를 입력해주셔야 회원 서비스 이용이 가능합니다.<br>
+                                    <br>
+                                    가. 수집하는 개인정보의 항목<br>
+                                    * 수집하는 필수항목<br>
+                                    - 실명인증정보 : 이름, 휴대전화번호, 본인 인증 또는 I-PIN(개인식별번호), GPKI<br>
+                                    - 가입정보 : 아이디, 비밀번호, 성명, 이메일, 전화번호, 휴대전화번호, 기관명<br>
+                                    * 선택항목<br>
+                                    - 주소, 기관의 부서명<br>
+                                    <br>
+                                    [컴퓨터에 의해 자동으로 수집되는 정보]<br>
+                                    인터넷 서비스 이용과정에서 아래 개인정보 항목이 자동으로 생성되어 수집될 수 있습니다.<br> 
+                                    - IP주소, 서비스 이용기록, 방문기록 등<br>
+                                    <br>
+                                    나. 개인정보 수집방법<br>
+                                    홈페이지 회원가입을 통한 수집<br>
+                                    <br>
+                                    2. 개인정보의 수집/이용 목적 및 보유/이용 기간<br>
+                                    통계청 나라통계사이트에서는 정보주체의 회원 가입일로부터 서비스를 제공하는 기간 동안에 한하여 통계청 나라통계사이트 서비스를 이용하기 위한 최소한의 개인정보를 보유 및 이용 하게 됩니다. 
+                                    회원가입 등을 통해 개인정보의 수집·이용, 제공 등에 대해 동의하신 내용은 언제든지 철회하실 수 있습니다. 
+                                    회원 탈퇴를 요청하거나 수집/이용목적을 달성하거나 보유/이용기간이 종료한 경우, 사업 폐지 등의 사유발생시 개인 정보를 지체 없이 파기합니다.<br>
+                                    <br>
+                                    * 실명인증정보<br>
+                                    - 개인정보 수집항목 : 이름, 휴대폰 본인 인증 또는 I-PIN(개인식별번호), GPKI<br>
+                                    - 개인정보의 수집·이용목적   : 홈페이지 이용에 따른 본인 식별/인증절차에 이용<br>
+                                    - 개인정보의 보유 및 이용기간 : I-PIN / GPKI는 별도로 저장하지 않으며 실명인증용으로만 이용<br>
+                                    <br>
+                                    * 가입정보<br>
+                                    - 개인정보 수집항목 : 아이디, 비밀번호, 성명, 이메일, 전화번호, 휴대전환번호, 기관명<br>
+                                    - 개인정보의 수집·이용목적 : 홈페이지 서비스 이용 및 회원관리, 불량회원의 부정 이용방지, 민원신청 및 처리 등<br>
+                                    - 개인정보의 보유 및 이용기간 : 2년 또는 회원탈퇴시<br>
+                                    <br>
+                                    정보주체는 개인정보의 수집·이용목적에 대한 동의를 거부할 수 있으며, 동의 거부시 통계청 나라통계사이트에 회원가입이 되지 않으며, 통계청 나라통계사이트에서 제공하는 서비스를 이용할 수 없습니다.<br>
+                                    <br>
+                                    3. 수집한 개인정보 제3자 제공<br>
+                                    통계청 나라통계사이트에서는 정보주체의 동의, 법률의 특별한 규정 등 개인정보 보호법 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.<br>
+                                    <br>
+                                    4. 개인정보 처리업무 안내<br>
+                                    통계청 나라통계사이트에서는 개인정보의 취급위탁은 하지 않고 있으며, 원활한 서비스 제공을 위해 아래의 기관을 통한 실명인증 및 공공 I-PIN, GPKI 인증을 하고 있습니다.<br>
+                                    <br>
+                                    * 수탁업체<br>
+                                    - 행정자치부<br>
+                                    · 위탁업무 내용 : 공공 I-PIN, GPKI 인증<br>
+                                    · 개인정보 보유 및 이용 기간 : 행정자치부에서는 이미 보유하고 있는 개인정보이기 때문에 별도로 저장하지 않음
+                                </p>
+                            </div>
+                            <p class="error_message">개인정보 약관에 동의해주세요.</p>
+                        </div>
+                    </div>
+                    <div class="nav_box">
+                        <a href="javascript:history.back();" class="btn type_gray">취소</a>
+                        <a href="view.html" class="btn type_primary">확인</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer id="footer">
+            <div class="inner">
+                <h2>CONTACT</h2>
+                <ul>
+                    <li>(주) 투비콘</li>
+                    <li>대표 : 노정한</li>
+                    <li>서울특별시 중구 세종대로 136 서울파이낸스센터 9층</li>
+                    <li>전화 :  02-517-4271</li>
+                    <li>이메일 : <a href="mailto:business@tobecon.net">business@tobecon.net</a></li>
+                </ul>
+                <p class="copyright">© Tobecon Inc. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

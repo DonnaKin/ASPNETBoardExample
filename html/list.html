@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투비콘 | 게시판</title>
+    <link rel="stylesheet" href="../resources/css/reset.css">
+    <link rel="stylesheet" href="../resources/css/fonts.css">
+    <link rel="stylesheet" href="../resources/css/common.css">
+    <script src="../lib/js/jquery-3.5.1.min.js"></script>
+    <script src="../resources/js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1 id="logo">
+                <a href="#">투비콘</a>
+            </h1>
+        </header>
+        <div id="container">
+            <div class="sub_top">
+                <div class="inner">
+                    <span class="sub_title">LIST</span>
+                </div>
+            </div>
+            <section>
+                <div class="inner">
+                    <div class="board_list_top">
+                        <div class="left">
+                            <div class="total">총 <strong>6</strong>개</div>
+                        </div>
+                        <div class="right">
+                            <select id="" class="select_box">
+                                <option value="0">전체</option>
+                                <option value="1">제목</option>
+                                <option value="2">내용</option>
+                                <option value="3">글쓴이</option>
+                            </select>
+                            <div class="search_box">
+                                <input type="text" id="search" class="input_search" placeholder="검색어를 입력해주세요.">
+                                <button type="button" class="btn_search">검색</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="board_list_wrap">
+                        <ul class="thead">
+                            <li class="th numb">번호</li>
+                            <li class="th subject">제목</li>
+                            <li class="th name">글쓴이</li>
+                            <li class="th date">등록일</li>
+                            <li class="th hit">조회</li>
+                        </ul>
+                        <!-- 목록 없음 .hide -->
+                        <div class="empty_box hide">
+                            <p>게시글이 없습니다.</p>
+                        </div>
+                        <!-- 목록 -->
+                        <ul class="tbody">
+                            <li class="td numb">
+                                <span>6</span>
+                            </li>
+                            <li class="td subject">
+                                <a href="view.html">투비콘 개인정보 처리방침 변경 안내<span class="icon_new">NEW</span></a>
+                            </li>
+                            <li class="td name">
+                                <span>홍길동</span>
+                            </li>
+                            <li class="td date">
+                                <span>2024/02/22</span>
+                            </li>
+                            <li class="td hit">
+                                <span>40</span>
+                            </li>
+                        </ul>
+                        <ul class="tbody">
+                            <li class="td numb">
+                                <span>5</span>
+                            </li>
+                            <li class="td subject">
+                                <a href="view.html">투비콘 개인정보 처리방침 변경 안내</a>
+                            </li>
+                            <li class="td name">
+                                <span>홍길동</span>
+                            </li>
+                            <li class="td date">
+                                <span>2024/02/22</span>
+                            </li>
+                            <li class="td hit">
+                                <span>40</span>
+                            </li>
+                        </ul>
+                        <ul class="tbody">
+                            <li class="td numb">
+                                <span>4</span>
+                            </li>
+                            <li class="td subject">
+                                <a href="view.html">투비콘 개인정보 처리방침 변경 안내</a>
+                            </li>
+                            <li class="td name">
+                                <span>홍길동</span>
+                            </li>
+                            <li class="td date">
+                                <span>2024/02/22</span>
+                            </li>
+                            <li class="td hit">
+                                <span>40</span>
+                            </li>
+                        </ul>
+                        <ul class="tbody">
+                            <li class="td numb">
+                                <span>3</span>
+                            </li>
+                            <li class="td subject">
+                                <a href="view.html">투비콘 개인정보 처리방침 변경 안내</a>
+                            </li>
+                            <li class="td name">
+                                <span>홍길동</span>
+                            </li>
+                            <li class="td date">
+                                <span>2024/02/22</span>
+                            </li>
+                            <li class="td hit">
+                                <span>40</span>
+                            </li>
+                        </ul>
+                        <ul class="tbody">
+                            <li class="td numb">
+                                <span>2</span>
+                            </li>
+                            <li class="td subject">
+                                <a href="view.html">투비콘 개인정보 처리방침 변경 안내</a>
+                            </li>
+                            <li class="td name">
+                                <span>홍길동</span>
+                            </li>
+                            <li class="td date">
+                                <span>2024/02/22</span>
+                            </li>
+                            <li class="td hit">
+                                <span>40</span>
+                            </li>
+                        </ul>
+                        <ul class="tbody">
+                            <li class="td numb">
+                                <span>1</span>
+                            </li>
+                            <li class="td subject">
+                                <a href="view.html">투비콘 개인정보 처리방침 변경 안내</a>
+                            </li>
+                            <li class="td name">
+                                <span>홍길동</span>
+                            </li>
+                            <li class="td date">
+                                <span>2024/02/22</span>
+                            </li>
+                            <li class="td hit">
+                                <span>40</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pager_box">
+                        <a href="#" class="btn btn_prev">이전</a>
+                        <div class="pager_number">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                        </div>
+                        <a href="#" class="btn btn_next">다음</a>
+                    </div>
+                    <div class="nav_box">
+                        <div class="edit_box">
+                            <a href="write.html" class="btn type_gray">글쓰기</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer id="footer">
+            <div class="inner">
+                <h2>CONTACT</h2>
+                <ul>
+                    <li>(주) 투비콘</li>
+                    <li>대표 : 노정한</li>
+                    <li>서울특별시 중구 세종대로 136 서울파이낸스센터 9층</li>
+                    <li>전화 :  02-517-4271</li>
+                    <li>이메일 : <a href="mailto:business@tobecon.net">business@tobecon.net</a></li>
+                </ul>
+                <p class="copyright">© Tobecon Inc. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
