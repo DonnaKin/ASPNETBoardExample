@@ -43,6 +43,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.2\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AspNetCore.Authentication.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.AspNetCore.Authentication.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Abstractions.dll</HintPath>
     </Reference>
@@ -76,9 +84,6 @@
     <Reference Include="Microsoft.AspNetCore.Mvc.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.AspNetCore.Mvc.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNetCore.Mvc.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.AspNetCore.Mvc.Core.2.2.5\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.AspNetCore.ResponseCaching.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.AspNetCore.ResponseCaching.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll</HintPath>
     </Reference>
@@ -90,6 +95,10 @@
     </Reference>
     <Reference Include="Microsoft.AspNetCore.WebUtilities, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.AspNetCore.WebUtilities.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.DotNet.PlatformAbstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
@@ -128,11 +137,22 @@
     <Reference Include="Microsoft.Net.Http.Headers, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Net.Http.Headers.2.2.0\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.Bson.1.0.2\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
@@ -140,27 +160,29 @@
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Diagnostics.DiagnosticSource.4.5.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
-    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    <Reference Include="System.Net.Http.Formatting, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.6.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
-      <Private>True</Private>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Text.Encodings.Web, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Text.Encodings.Web.4.5.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
-    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.1\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -174,8 +196,15 @@
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Mvc, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.AspNet.Mvc.5.3.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    <Reference Include="System.Web.Http, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.3.0\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.3.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.AspNet.Razor.3.3.0\lib\net45\System.Web.Razor.dll</HintPath>
@@ -196,11 +225,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\PublishProfiles\FolderProfile.pubxml.user" />
@@ -293,132 +317,6 @@
     <Content Include="lib\js\jquery-3.5.1.min.js" />
     <Content Include="lib\js\sha256Ecrypt.js" />
     <Content Include="lib\js\swiper-bundle.js" />
-    <Content Include="obj\Debug\Project.Donna.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\Project.Donna.dll" />
-    <Content Include="obj\Debug\Project.Donna.pdb" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Antlr3.Runtime.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Antlr3.Runtime.pdb" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\AspNet.ScriptManager.bootstrap.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\AspNet.ScriptManager.jQuery.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\ko\Microsoft.AspNet.FriendlyUrls.resources.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\ko\System.Net.Http.Formatting.resources.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\ko\System.Web.Http.resources.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\ko\System.Web.Http.WebHost.resources.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\ko\System.Web.Optimization.resources.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.FriendlyUrls.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ScriptManager.MSAjax.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ScriptManager.WebForms.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Newtonsoft.Json.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Project.Donna.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Project.Donna.pdb" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csc.exe" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csi.exe" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Win32.Primitives.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.AppContext.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Collections.Immutable.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Console.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Diagnostics.StackTrace.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Globalization.Calendars.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.IO.Compression.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.IO.Compression.ZipFile.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.IO.FileSystem.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.IO.FileSystem.Primitives.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Net.Http.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Net.Sockets.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Reflection.Metadata.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Cryptography.Encoding.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Cryptography.Primitives.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Text.Encoding.CodePages.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Threading.Tasks.Extensions.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.ValueTuple.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Xml.ReaderWriter.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Xml.XmlDocument.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Xml.XPath.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Xml.XPath.XDocument.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\System.Net.Http.Formatting.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Http.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Http.WebHost.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Optimization.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\WebGrease.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\Board\List.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Board\View.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Board\Write.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Default.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Error.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\favicon.ico" />
-    <Content Include="obj\Release\Package\PackageTmp\Global.asax" />
-    <Content Include="obj\Release\Package\PackageTmp\html\list.html" />
-    <Content Include="obj\Release\Package\PackageTmp\html\view.html" />
-    <Content Include="obj\Release\Package\PackageTmp\html\write.html" />
-    <Content Include="obj\Release\Package\PackageTmp\index.html" />
-    <Content Include="obj\Release\Package\PackageTmp\lib\css\datepicker.css" />
-    <Content Include="obj\Release\Package\PackageTmp\lib\css\swiper-bundle.min.css" />
-    <Content Include="obj\Release\Package\PackageTmp\lib\js\calendar.js" />
-    <Content Include="obj\Release\Package\PackageTmp\lib\js\datepicker.js" />
-    <Content Include="obj\Release\Package\PackageTmp\lib\js\jquery-3.5.1.min.js" />
-    <Content Include="obj\Release\Package\PackageTmp\lib\js\sha256Ecrypt.js" />
-    <Content Include="obj\Release\Package\PackageTmp\lib\js\swiper-bundle.js" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\css\common.css" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\css\fonts.css" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\css\reset.css" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\image\btn_pg_next.svg" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\image\btn_pg_prev.svg" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\image\btn_search.svg" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\image\icon_arrow_down.svg" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\image\icon_check_w.svg" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\image\icon_delete.svg" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\image\icon_download.svg" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\image\icon_plus.svg" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\image\icon_reply.svg" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\image\img_test.png" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\image\logo.svg" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\js\common.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\modernizr-2.8.3.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\DetailsView.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\Focus.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\GridView.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\Menu.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MenuStandards.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\SmartNav.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\TreeView.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebForms.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebParts.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Test\EncryptTest.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Test\FileControl.aspx" />
-    <Content Include="obj\Release\Project.Donna.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Release\Project.Donna.dll" />
-    <Content Include="obj\Release\Project.Donna.pdb" />
-    <Content Include="obj\Release\_WPPLastBuildInfo.txt" />
     <Content Include="packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll" />
     <Content Include="packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.pdb" />
     <Content Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\readme.txt" />
@@ -639,6 +537,7 @@
     <Content Include="uploads\filetest\240313\test_20240313165643.txt" />
     <Content Include="uploads\filetest\240313\test_20240313165715.txt" />
     <Content Include="uploads\filetest\240313\그림2_20240313165715.png" />
+    <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -702,14 +601,18 @@
     <Compile Include="Model\BoardAttach.cs" />
     <Compile Include="Model\BoardComment.cs" />
     <Compile Include="Model\BoardMessage.cs" />
-    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
-    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
-    <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\Board.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Service\DBHelper.cs" />
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
     <Compile Include="Test\EncryptTest.aspx.cs">
       <DependentUpon>EncryptTest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -723,6 +626,13 @@
     </Compile>
     <Compile Include="Test\FileControl.aspx.designer.cs">
       <DependentUpon>FileControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -740,41 +650,6 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <Content Include="Bundle.config" />
     <Content Include="Master\Site.Master" />
-    <Content Include="obj\Debug\ASPNETBoardExample.csproj.AssemblyReference.cache" />
-    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <Content Include="obj\Debug\Project..82FFD6B5.Up2Date" />
-    <Content Include="obj\Debug\Project.Donna.csproj.AssemblyReference.cache" />
-    <Content Include="obj\Debug\Project.Donna.csproj.CoreCompileInputs.cache" />
-    <Content Include="obj\Debug\Renewal.csproj.AssemblyReference.cache" />
-    <Content Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csc.exe.config" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csc.rsp" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csi.exe.config" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csi.rsp" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CSharp.Core.targets" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Managed.Core.targets" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.VisualBasic.Core.targets" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe.config" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\vbc.rsp" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe.config" />
-    <Content Include="obj\Release\Package\PackageTmp\Bundle.config" />
-    <Content Include="obj\Release\Package\PackageTmp\Master\Site.Master" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\fonts\Pretendard-Bold.otf" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\fonts\Pretendard-Bold.woff" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\fonts\Pretendard-Bold.woff2" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\fonts\Pretendard-Medium.otf" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\fonts\Pretendard-Medium.woff" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\fonts\Pretendard-Medium.woff2" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\fonts\Pretendard-Regular.otf" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\fonts\Pretendard-Regular.woff" />
-    <Content Include="obj\Release\Package\PackageTmp\resources\fonts\Pretendard-Regular.woff2" />
-    <Content Include="obj\Release\Package\PackageTmp\Web.config" />
-    <Content Include="obj\Release\Project.Donna.csproj.AssemblyReference.cache" />
-    <Content Include="obj\Release\Project.Donna.csproj.CoreCompileInputs.cache" />
-    <Content Include="obj\Release\TransformWebConfig\assist\Web.config" />
-    <Content Include="obj\Release\TransformWebConfig\original\Web.config" />
-    <Content Include="obj\Release\TransformWebConfig\transformed\Web.config" />
     <None Include="packages.config" />
     <Content Include="packages\Antlr.3.5.0.2\.signature.p7s" />
     <Content Include="packages\Antlr.3.5.0.2\Antlr.3.5.0.2.nupkg" />
@@ -880,6 +755,7 @@
     <Content Include="uploads\20240313\게시판만들기%28김민경%29_240305_v1.0_20240313165507.pptx" />
     <Content Include="uploads\2cce2d86-ecbb-4cd2-b5ac-6a792270435d\20240320141105046.pptx" />
     <Content Include="uploads\f4a62d6b-028e-4921-8031-c384b06b0307\게시판만들기%28김민경%29_240314_v2.0_20240318170325.pptx" />
+    <Content Include="Site.Mobile.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -888,9 +764,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="obj\Debug\TempPE\" />
-    <Folder Include="obj\Release\ProfileTransformWebConfig\transformed\" />
-    <Folder Include="obj\Release\TempPE\" />
     <Folder Include="uploads\20240308\" />
   </ItemGroup>
   <PropertyGroup>
